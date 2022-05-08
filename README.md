@@ -41,7 +41,10 @@
   
 ```     
 Config.env'yi kendi değerlerinizle yapılandırın.
-Ve son olarak başlatın ```python bot.py```     
+Ve son olarak başlatın.
+```  
+```console
+  python bot.py
 ```  
 </details>    
 
