@@ -13,7 +13,7 @@
 - [x] Kullanıcılara mesaj yayınlar.
 - [x] Şifreli giriş desteği.
 
-## Deploy
+## Deploy 🚀
 
 <details><summary>Heroku'ya Dağıt</summary>
 <p>
