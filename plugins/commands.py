@@ -1,8 +1,12 @@
-from config import AUTH_CHANNEL
 from translation import Translation
-from pyrogram import Client, filters, types
-from functions.settings import Settings
+from config import AUTH_CHANNEL, PASS
+from functions.settings import Settings, Login
 from functions.forcesub import handle_force_subscribe
+
+from pyrogram.emoji import *
+from pyrogram import Client, filters, types
+
+from database.database import db
 
 
 @Client.on_message(filters.private & filters.command(["start", "help"]))
@@ -30,3 +34,15 @@ async def delete_thumb_handler(c: Client, m: "types.Message"):
         if fsub == 400:
             return
     await Settings(m)
+
+
+@Client.on_message(filters.private & filters.incoming & filters.command("login"), group=4)
+async def login_handler(c, m):
+    if PASS:
+        chat_id = m.chat.id
+        logged = await db.get_user_pass(chat_id)
+        if logged != PASS:
+            await db.delete_user(chat_id)
+        elif logged is not None:
+            return await m.reply(f"__Zaten giriş yaptınız.__ {VICTORY_HAND}")
+        await Login(c, m)
