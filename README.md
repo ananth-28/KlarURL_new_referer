@@ -37,11 +37,15 @@
     cd Tiranozor
     pip3 install -r requirements.txt
 ```
-
+<br>
+    <p align="center">
+      
 Config.env'yi kendi değerlerinizle yapılandırın.
 
-Ve başlatın ```python bot.py```
-
+Ve son olarak başlatın ```python bot.py```
+      
+</p>
+  
 </details>    
 
 
