@@ -3,17 +3,14 @@
 ![GitHub stars](https://img.shields.io/github/stars/Turkce-Botlar-Sohbet/Tiranozor?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/Turkce-Botlar-Sohbet/Tiranozor?style=social)
 
-Bağlantıları Yüklemek için Telegram Botu.
+### Bağlantıları Yüklemek için Telegram Botu.
 
-**Özellikleri**:
+**Özellikler**:
 
-👉 [YT-DLP'de Desteklenen Bağlantıları](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md) Telegram'a yükler.
-
-👉 HTTP/HTTPS'yi Dosya/Video olarak Telegram'a yükler.
-
-👉 Kullanıcılara mesaj yayınlar.
-
-👉 Şifreli giriş desteği.
+- [x] [YT-DLP'de Desteklenen Bağlantıları](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md) Telegram'a yükler.
+- [x] HTTP/HTTPS'yi Dosya/Video olarak Telegram'a yükler.
+- [x] Kullanıcılara mesaj yayınlar.
+- [x] Şifreli giriş desteği.
 
 ## Deploy
 
@@ -31,7 +28,7 @@ Bağlantıları Yüklemek için Telegram Botu.
     <br>
     <p align="center">
 
-    Yerel Makinede Dağıtım
+    Yerel Makinede Dağıtım.
 
 </p>
 
@@ -57,7 +54,7 @@ Komut                   | Açıklama
 `/showthumb`            | Thumbnail gösterir.
 `/status`               | Sunucu bilgilerini gösterir.
 
-## Kredi ve Teşekkürler
+## Kredi ve Teşekkürler.
 
 * [X-URL-Uploader](https://github.com/X-Gorn/X-URL-Uploader/tree/database) için [@X-Gorn](https://t.me/xgorn)
 * [TG-URL-Uploader](https://github.com/TGExplore/TG-URL-Uploader) için [@TGExplore](https://t.me/ViruZs)
