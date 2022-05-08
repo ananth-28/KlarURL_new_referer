@@ -9,6 +9,7 @@
 
 - [x] [YT-DLP'de Desteklenen Bağlantıları](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md) Telegram'a yükler.
 - [x] HTTP/HTTPS'yi Dosya/Video olarak Telegram'a yükler.
+- [x] Kalıcı Thumbnail desteği.
 - [x] Kullanıcılara mesaj yayınlar.
 - [x] Şifreli giriş desteği.
 
