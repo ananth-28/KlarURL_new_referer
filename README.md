@@ -1,4 +1,4 @@
-# Tiranozor
+<h1 align="center">Tiranozor</h1>
 
 ![GitHub stars](https://img.shields.io/github/stars/Turkce-Botlar-Sohbet/Tiranozor?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/Turkce-Botlar-Sohbet/Tiranozor?style=social)
@@ -28,7 +28,7 @@
     <br>
     <p align="center">
 
-    Yerel Makinede Dağıtım.
+    Yerel Makine'de Dağıtım.
 
 </p>
 
