@@ -52,11 +52,11 @@ Ve son olarak başlatın.
 ## Komutlar
 Komut                   | Açıklama
 ----------------------- | ----------------------------------------    
-`/broadcast`            | Kullanıcılara toplu olarak mesaj gönderme.
-`/help`                 | Yardım komutu.     
+`/broadcast`            | Kullanıcılara toplu olarak mesaj gönderme.  
 `/delthumb`             | Thumbnail siler.
 `/showthumb`            | Thumbnail gösterir.
 `/status`               | Sunucu bilgilerini gösterir.
+`/ayarlar`              | Bot ayarlarını gösterir.
 
 ## Kredi ve Teşekkürler.
 
