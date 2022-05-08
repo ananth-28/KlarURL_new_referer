@@ -3,8 +3,6 @@
 ![GitHub stars](https://img.shields.io/github/stars/Turkce-Botlar-Sohbet/Tiranozor?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/Turkce-Botlar-Sohbet/Tiranozor?style=social)
 
----
-
 Bağlantıları Yüklemek için Telegram Botu.
 
 **Özellikleri**:
