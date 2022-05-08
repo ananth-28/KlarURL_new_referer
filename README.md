@@ -38,14 +38,11 @@
     pip3 install -r requirements.txt
 ```
 <br>
-    <p align="center">
-      
-Config.env'yi kendi değerlerinizle yapılandırın.
-
-Ve son olarak başlatın ```python bot.py```
-      
-</p>
   
+```     
+Config.env'yi kendi değerlerinizle yapılandırın.
+Ve son olarak başlatın ```python bot.py```     
+```  
 </details>    
 
 
