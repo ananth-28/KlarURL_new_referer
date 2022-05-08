@@ -3,11 +3,10 @@
   "description": "URL'leri Telegram'a Dosya ve Video Olarak Yüklemek için Telegram Botu.",
   "keywords": [
     "tiranozor",
-    "telegram"
+    "youtube"
   ],
   "logo": "https://telegra.ph/file/5ff448dc023800e2f4bb3.jpg",
   "success_url": "https://t.me/tiranozorbot",
-  "website": "https://t.me/botsohbet",
   "repository": "https://github.com/Turkce-Botlar-Sohbet/Tiranozor",
   "env": {
     "BOT_TOKEN": {
