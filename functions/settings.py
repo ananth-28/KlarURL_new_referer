@@ -52,14 +52,10 @@ async def Settings(m: "types.Message"):
     if thumbnail:
         buttons_markup.append([types.InlineKeyboardButton("🌆 Thumbnail Göster",
                                                           callback_data="showThumbnail")])
-    if is_command:
-        buttons_markup.append([types.InlineKeyboardButton(f"Kapat ✖",
-                                                          callback_data="close"),
-                               ])
-    else:
-        buttons_markup.append([types.InlineKeyboardButton(f"🔙 Geri",
-                                                          callback_data="home"),
-                               ])
+
+    buttons_markup.append([types.InlineKeyboardButton(f"🔙 Geri",
+                                                      callback_data="home"),
+                           ])
 
     try:
         await message(
