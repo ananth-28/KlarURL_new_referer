@@ -1,7 +1,7 @@
 ## URL-Yükleyici
 
-![GitHub stars](https://img.shields.io/github/stars/Turkce-Botlar-Sohbet/URL-Yukleyici?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Turkce-Botlar-Sohbet/URL-Yukleyici?style=social)
+![GitHub stars](https://img.shields.io/github/stars/Turkce-Botlar-Sohbet/Tiranozor?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Turkce-Botlar-Sohbet/Tiranozor?style=social)
 
 ---
 
@@ -9,11 +9,13 @@ Bağlantıları Yüklemek için Telegram Botu.
 
 **Özellikleri**:
 
-👉 [YT-DLP'de Desteklenen Bağlantıları](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md) Telegram'a yükleyin.
+👉 [YT-DLP'de Desteklenen Bağlantıları](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md) Telegram'a yükler.
 
-👉 HTTP/HTTPS'yi Dosya/Video olarak Telegram'a yükleyin.
+👉 HTTP/HTTPS'yi Dosya/Video olarak Telegram'a yükler.
 
-👉 Mesaj yayınla
+👉 Kullanıcılara mesaj yayınlar.
+
+👉 Şifreli giriş desteği.
 
 ## Deploy
 
@@ -36,8 +38,8 @@ Bağlantıları Yüklemek için Telegram Botu.
 </p>
 
 ```console
-    git clone https://github.com/Piracy-Team/MariaSoft
-    cd URL-Yukleyici
+    git clone https://github.com/Turkce-Botlar-Sohbet/Tiranozor
+    cd Tiranozor
     pip3 install -r requirements.txt
 ```
 
