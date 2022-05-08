@@ -1,9 +1,7 @@
 <h1 align="center">Tiranozor</h1>
 
-<p align="center">
 ![GitHub stars](https://img.shields.io/github/stars/Turkce-Botlar-Sohbet/Tiranozor?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/Turkce-Botlar-Sohbet/Tiranozor?style=social)
-</p>
 
 ### Bağlantıları Yüklemek için Telegram Botu.
 
