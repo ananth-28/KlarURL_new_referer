@@ -59,7 +59,7 @@
       "required": false
     },
     "CHUNK_SIZE": {
-      "description": "İsteklerde kullanılması gereken yığın boyutu",
+      "description": "İsteklerde kullanılması gereken yığın boyutu.",
       "value": "128"
     },
     "HEROKU_APP_NAME": {
