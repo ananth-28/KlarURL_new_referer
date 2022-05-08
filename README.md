@@ -70,3 +70,6 @@ Komut                   | Açıklama
 
 #### LİSANS
 - GPLv3
+
+[![telegram badge](https://img.shields.io/badge/Telegram-Grubu-30302f?style=flat&logo=telegram)](https://telegram.dog/botsohbet)
+[![telegram badge](https://img.shields.io/badge/Telegram-Kanalı-30302f?style=flat&logo=telegram)](https://telegram.dog/botarsivi)
