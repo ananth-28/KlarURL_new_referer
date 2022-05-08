@@ -40,11 +40,11 @@
 <br>
   
 ```     
-Config.env'yi kendi değerlerinizle yapılandırın.
+config.env'yi kendi değerlerinizle yapılandırın.
 Ve son olarak başlatın.
 ```  
 ```console
-  python bot.py
+   python bot.py
 ```  
 </details>    
 
