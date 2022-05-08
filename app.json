@@ -1,5 +1,5 @@
 {
-  "name": "URL-Yukleyici",
+  "name": "Tiranozor",
   "description": "URL'leri Telegram'a Dosya ve Video Olarak Yüklemek için Telegram Botu.",
   "keywords": [
     "youtube",
@@ -8,7 +8,7 @@
   "logo": "https://telegra.ph/file/ad1d90498334a3b59789b.jpg",
   "success_url": "https://t.me/tiranozorbot",
   "website": "https://github.com/Turkce-Botlar-Sohbet",
-  "repository": "https://github.com/Turkce-Botlar-Sohbet/URL-Yukleyici",
+  "repository": "https://github.com/Turkce-Botlar-Sohbet/Tiranozor",
   "env": {
     "BOT_TOKEN": {
       "description": "https://t.me/BotFather adresinden bir bot oluşturarak edinin.",
@@ -23,11 +23,11 @@
       "value": ""
     },
     "OWNER_ID": {
-      "description": "Telegram ID numaranız",
+      "description": "Telegram ID numaranız.",
       "value": ""
     },
     "DATABASE_URL": {
-      "description": "MongoDB URI'niz",
+      "description": "MongoDB URI'niz.",
       "value": ""
     },
     "SESSION_NAME": {
@@ -37,6 +37,11 @@
     "AUTH_CHANNEL": {
       "description": "Zorla abone yapmak için kanalınızın ID numarası.",
       "value": "",
+      "required": false
+    },
+    "PASS": {
+      "description": "Şifreli giriş ekler. (Bu özellik için auth_channel doldurulmalıdır.)",
+      "value": "maymun",
       "required": false
     },
     "LOG_CHANNEL": {
@@ -59,7 +64,7 @@
       "value": "128"
     },
     "HEROKU_APP_NAME": {
-      "description": "Heroku uygulama adı",
+      "description": "Heroku uygulamanızın adı.",
       "value": "",
       "required": false
     },
