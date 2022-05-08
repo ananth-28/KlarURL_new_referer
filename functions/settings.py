@@ -76,14 +76,14 @@ async def Settings(m: "types.Message"):
 
 
 async def Login(c, m: "types.Message"):
-    chat_id = m.chat.id
+    usr_id = m.chat.id
     if PASS:
         try:
             try:
                 msg = await m.reply(
                     "**Şifreyi gönderin.**\n\n__(İşlemi iptal etmek için /iptal komutunu kullanabilirsiniz.)__",
                     reply_markup=ForceReply(True))
-                _text = await c.listen(m.chat.id, filters=filters.text, timeout=90)
+                _text = await c.listen(usr_id, filters=filters.text, timeout=90)
                 if _text.text:
                     textp = _text.text.upper()
                     if textp == "/iptal":
@@ -100,7 +100,7 @@ async def Login(c, m: "types.Message"):
                 await db.add_user_pass(chat_id, textp)
                 msg_text = f"__Evet! Başarıyla Oturum Açıldı.__ {FACE_SAVORING_FOOD}"
                 await m.reply_text(
-                    text=Translation.START_TEXT.format(m.from_user.mention),
+                    text=Translation.START_TEXT.format(m.chat.mention),
                     disable_web_page_preview=True,
                     reply_to_message_id=m.id,
                     reply_markup=Translation.START_BUTTONS
