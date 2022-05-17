@@ -5,7 +5,7 @@ import shutil
 import time
 from datetime import datetime
 
-from config import DOWNLOAD_LOCATION, LOG_CHANNEL, HTTP_PROXY, TG_MAX_FILE_SIZE, DEF_WATER_MARK_FILE, PROMO
+from config import DOWNLOAD_LOCATION, LOG_CHANNEL, HTTP_PROXY, TG_MAX_FILE_SIZE, DEF_WATER_MARK_FILE, PROMO, REFERER, REFERER_URL
 from pyrogram.enums import MessageEntityType, ChatAction
 from database.database import db
 from translation import Translation
@@ -207,6 +207,9 @@ async def yt_dlp_call_back(bot, update):
     if "closeload" in yt_dlp_url:
         command_to_exec.append("--referer")
         command_to_exec.append("https://closeload.com/")
+    if REFERER in yt_dlp_url:
+        command_to_exec.append("--referer")
+        command_to_exec.append("https://{REFERER_URL}/")
     if yt_dlp_username is not None:
         command_to_exec.append("--username")
         command_to_exec.append(yt_dlp_username)
