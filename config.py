@@ -75,6 +75,10 @@ SESSION_NAME = environ.get("SESSION_NAME", "")
 # database uri (mongodb)
 DATABASE_URL = environ.get("DATABASE_URL", "")
 
+# Website referer
+REFERER = environ.get("REFERER", "")
+REFERER_URL = environ.get("REFERER_URL", "")
+
 # Heroku
 HEROKU_APP_NAME = environ.get('HEROKU_APP_NAME', None)
 HEROKU_API_KEY = environ.get('HEROKU_API_KEY', None)
