@@ -38,6 +38,14 @@
       "value": "",
       "required": false
     },
+    "REFERER_URL": {
+      "description": "403 Hatası veren siteler için",
+      "value": ""
+    },
+    "REFERER": {
+      "description": "403 Hatası veren siteler için",
+      "value": ""
+    },
     "PASS": {
       "description": "Şifreli giriş ekler. (Bu özellik için auth_channel doldurulmalıdır.)",
       "value": "maymun",
