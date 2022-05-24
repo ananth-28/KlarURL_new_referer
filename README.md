@@ -74,20 +74,15 @@ Ve son olarak başlatın.
 ```  
 </details>    
 
-
-## Komutlar
-
-   broadcast - Toplu mesaj gönder
-
-   help - Yardım
-
-   genthumb - Kapak resmi ekle
-
-   delthumb - Kapak resmi sil
-
-   ban - Kullanıcı yasakla
-
-   unban - Kullanıcının yasağını kaldır
+#### Komutlar
+```
+broadcast - Toplu mesaj gönder
+help - Yardım    
+genthumb - Kapak resmi ekle
+delthumb - Kapak resmi sil
+ban - Kullanıcı yasakla
+unban - Kullanıcının yasağını kaldır
+```
 
 ## Kredi ve Teşekkürler.
 
