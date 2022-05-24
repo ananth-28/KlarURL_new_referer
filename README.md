@@ -24,13 +24,29 @@
 </p>
 </details>
 
-<details><summary>Render'a Dağıt</summary>
-<p>
-<br>
-<a href="https://render.com">
-  <img src="alt="Deploy">
-</a>
-</p>
+<details>
+    <summary>Render'a Dağıt</summary>
+
+    New / Static Site
+    https://github.com/andta200/KlarURL_new_referer
+    Build Command: python3 bot.py
+    Publish directory: ./
+    Advanced / Add Environment Variable
+       API_HASH
+       APP_ID
+       AUTH_CHANNEL: -100xxxxxxxx, Zorunlu abonelik kanalı
+       BOT_TOKEN
+       CHUNK_SIZE:128
+       DATABASE_URL
+       DEF_THUMB_NAIL_VID_S: https://i.ytimg.com/vi/NXeTO5QM-Gw/maxresdefault.jpg
+       LOG_CHANNEL: -100xxxxxxxx, Kayıtların tutulduğu kanal
+       OWNER_ID: Kullannıcı Telegram ID
+       PASS: maymun
+       PROMO: False
+       REFERER: dizipal252.com
+       REFERER_URL: stream.dizipal252.com
+       SESSION_NAME: urlyukleyici
+
 </details>
 
 <details>
