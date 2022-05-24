@@ -35,12 +35,12 @@
       API_HASH
       APP_ID
       AUTH_CHANNEL: -100xxxxxxxx, Zorunlu abonelik kanalı
-      BOT_TOKEN
+      BOT_TOKEN: @BotFather
       CHUNK_SIZE:128
-      DATABASE_URL
+      DATABASE_URL: MongoDB URL
       DEF_THUMB_NAIL_VID_S: https://i.ytimg.com/vi/NXeTO5QM-Gw/maxresdefault.jpg
       LOG_CHANNEL: -100xxxxxxxx, Kayıtların tutulduğu kanal
-      OWNER_ID: Kullannıcı Telegram ID
+      OWNER_ID: Kullanıcı Telegram ID
       PASS: maymun
       PROMO: False
       REFERER: dizipal252.com
