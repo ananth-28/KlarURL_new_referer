@@ -24,6 +24,15 @@
 </p>
 </details>
 
+<details><summary>Render'a Dağıt</summary>
+<p>
+<br>
+<a href="https://render.com">
+  <img src="alt="Deploy">
+</a>
+</p>
+</details>
+
 <details>
     <summary>Vps'ye Dağıt</summary>
     <br>
