@@ -78,10 +78,15 @@ Ve son olarak başlatın.
 ## Komutlar
 
    broadcast - Toplu mesaj gönder
-   help - Yardım    
+
+   help - Yardım
+
    genthumb - Kapak resmi ekle
+
    delthumb - Kapak resmi sil
+
    ban - Kullanıcı yasakla
+
    unban - Kullanıcının yasağını kaldır
 
 ## Kredi ve Teşekkürler.
