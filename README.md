@@ -76,13 +76,13 @@ Ve son olarak başlatın.
 
 
 ## Komutlar
-Komut                   | Açıklama
------------------------ | ----------------------------------------    
-`/broadcast`            | Kullanıcılara toplu olarak mesaj gönderme.  
-`/delthumb`             | Thumbnail siler.
-`/showthumb`            | Thumbnail gösterir.
-`/status`               | Sunucu bilgilerini gösterir.
-`/ayarlar`              | Bot ayarlarını gösterir.
+
+   broadcast - Toplu mesaj gönder
+   help - Yardım    
+   genthumb - Kapak resmi ekle
+   delthumb - Kapak resmi sil
+   ban - Kullanıcı yasakla
+   unban - Kullanıcının yasağını kaldır
 
 ## Kredi ve Teşekkürler.
 
