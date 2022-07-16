@@ -210,6 +210,11 @@ async def yt_dlp_call_back(bot, update):
     if REFERER in yt_dlp_url:
         command_to_exec.append("--referer")
         command_to_exec.append("https://{REFERER_URL}/")
+# deneme
+    if "hotstream.club" in yt_dlp_url:
+        command_to_exec.append("--referer")
+        command_to_exec.append("https://hotstream.club/player/index.php?data=9fb4651c05b2ed70fba5afe0b039a550")
+# deneme
     if yt_dlp_username is not None:
         command_to_exec.append("--username")
         command_to_exec.append(yt_dlp_username)
