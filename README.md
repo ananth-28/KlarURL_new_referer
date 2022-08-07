@@ -76,6 +76,7 @@ Ve son olarak başlatın.
 
 #### Komutlar
 ```
+start - start
 broadcast - Toplu mesaj gönder
 help - Yardım    
 genthumb - Kapak resmi ekle
