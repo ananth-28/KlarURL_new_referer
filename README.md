@@ -43,8 +43,8 @@
       OWNER_ID: Kullanıcı Telegram ID
       PASS: maymun
       PROMO: False
-      REFERER: dizipal252.com
-      REFERER_URL: stream.dizipal252.com
+      REFERER: dizipal339.com
+      REFERER_URL: stream.dizipal339.com
       SESSION_NAME: urlyukleyici
 
 </details>
