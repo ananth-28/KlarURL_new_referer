@@ -34,17 +34,17 @@
     5️⃣Advanced / Add Environment Variable
       API_HASH
       APP_ID
-      AUTH_CHANNEL: -100xxxxxxxx, Zorunlu abonelik kanalı
+      AUTH_CHANNEL: -100xxxxxxxx, Zorunlu abonelik kanalı (Botu kanala yönetici yapmayı unutma)
       BOT_TOKEN: @BotFather
       CHUNK_SIZE:128
       DATABASE_URL: MongoDB URL
       DEF_THUMB_NAIL_VID_S: https://i.ytimg.com/vi/NXeTO5QM-Gw/maxresdefault.jpg
-      LOG_CHANNEL: -100xxxxxxxx, Kayıtların tutulduğu kanal
+      LOG_CHANNEL: -100xxxxxxxx, Kayıtların tutulduğu kanal (Botu kanala yönetici yapmayı unutma)
       OWNER_ID: Kullanıcı Telegram ID
       PASS: maymun
       PROMO: False
-      REFERER: dizipal339.com
-      REFERER_URL: stream.dizipal339.com
+      REFERER: dizipal364.com
+      REFERER_URL: stream.dizipal364.com
       SESSION_NAME: urlyukleyici
 
 </details>
