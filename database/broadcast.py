@@ -94,13 +94,12 @@ async def broadcast_confrm(bot, query):
         pti, sh = await broadcast_messages(bot, int(user['id']), b_msg)
         if pti:
             success += 1
-        elif not pti:
-            if sh == "Blocked":
-                blocked += 1
-            elif sh == "Deleted":
-                deleted += 1
-            elif sh == "Error":
-                failed += 1
+        elif sh == "Blocked":
+            blocked += 1
+        elif sh == "Deleted":
+            deleted += 1
+        elif sh == "Error":
+            failed += 1
         done += 1
         await asyncio.sleep(2)
         if not done % 20:

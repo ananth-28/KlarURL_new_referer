@@ -6,7 +6,7 @@ URL_REGEX = "http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-
 
 
 def random_char(y):
-    return ''.join(random.choice(string.ascii_letters) for x in range(y))
+    return ''.join(random.choice(string.ascii_letters) for _ in range(y))
 
 
 def remove_urls(string):

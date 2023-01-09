@@ -28,12 +28,11 @@ async def ddl_call_back(bot, update):
     tg_send_type, yt_dlp_format, yt_dlp_ext, random = cb_data.split("=")
 
     dtime = str(time.time())
-    message = update.message
     user_id = update.from_user.id
+    message = update.message
     chat_id = message.chat.id
 
-    thumb_image_path = DOWNLOAD_LOCATION + \
-                       "/" + str(user_id) + f'{random}' + ".jpg"
+    thumb_image_path = f"{DOWNLOAD_LOCATION}/{str(user_id)}" + f'{random}' + ".jpg"
 
     yt_dlp_url = message.reply_to_message.text
     custom_file_name = os.path.basename(yt_dlp_url[:100])
@@ -117,7 +116,7 @@ async def ddl_call_back(bot, update):
         try:
             file_size = os.stat(download_directory).st_size
         except FileNotFoundError as exc:
-            download_directory = os.path.splitext(download_directory)[0] + "." + "mkv"
+            download_directory = f"{os.path.splitext(download_directory)[0]}.mkv"
             # https://stackoverflow.com/a/678242/4723940
             file_size = os.stat(download_directory).st_size
         if file_size > TG_MAX_FILE_SIZE:
@@ -279,5 +278,4 @@ Süre: {}""".format(
                             display_message = current_message
                     except Exception as e:
                         LOGGER.info(str(e))
-                        pass
         return await response.release()

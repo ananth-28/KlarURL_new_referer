@@ -32,7 +32,7 @@ class Bot(Client):
         if not os.path.isdir(DOWNLOAD_LOCATION): os.makedirs(DOWNLOAD_LOCATION)
         await super().start()
         me = await self.get_me()
-        self.username = '@' + me.username
+        self.username = f'@{me.username}'
         LOGGER.info(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
         if OWNER_ID != 0:
             try:

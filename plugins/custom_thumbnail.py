@@ -55,10 +55,17 @@ async def show_thumbnail(c: Client, m: "types.Message"):
         await c.send_photo(
             chat_id=m.chat.id,
             photo=thumbnail,
-            caption=f"**Ayarlı Thumbnail.**",
+            caption="**Ayarlı Thumbnail.**",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("🗑️ Sil", callback_data="deleteThumbnail")]]
+                [
+                    [
+                        InlineKeyboardButton(
+                            "🗑️ Sil", callback_data="deleteThumbnail"
+                        )
+                    ]
+                ]
             ),
-            reply_to_message_id=m.id)
+            reply_to_message_id=m.id,
+        )
     else:
-        await m.reply_text(text=f"**Thumbnail Bulunamadı.**")
+        await m.reply_text(text="**Thumbnail Bulunamadı.**")

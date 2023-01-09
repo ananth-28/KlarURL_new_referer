@@ -53,9 +53,9 @@ async def Settings(m: "types.Message"):
         buttons_markup.append([types.InlineKeyboardButton("🌆 Thumbnail Göster",
                                                           callback_data="showThumbnail")])
 
-    buttons_markup.append([types.InlineKeyboardButton(f"🔙 Geri",
-                                                      callback_data="home"),
-                           ])
+    buttons_markup.append(
+        [types.InlineKeyboardButton("🔙 Geri", callback_data="home")]
+    )
 
     try:
         await message(
@@ -72,41 +72,41 @@ async def Settings(m: "types.Message"):
 
 
 async def Login(c, m: "types.Message"):
+    if not PASS:
+        return
     usr_id = m.chat.id
-    if PASS:
+    try:
         try:
-            try:
-                msg = await m.reply(
-                    "**Şifreyi gönderin.**\n\n__(İşlemi iptal etmek için /iptal komutunu kullanabilirsiniz.)__",
-                    reply_markup=ForceReply(True))
-                _text = await c.listen(usr_id, filters=filters.text, timeout=90)
-                if _text.text:
-                    textp = _text.text.upper()
-                    if textp == "/iptal":
-                        await m.delete(True)
-                        await msg.delete(True)
-                        await msg.reply("__İşlem Başarıyla İptal Edildi.__")
-                        return
-                else:
-                    return
-            except TimeoutError:
-                await m.reply("__Şifre için daha fazla bekleyemem, tekrar dene.__")
+            msg = await m.reply(
+                "**Şifreyi gönderin.**\n\n__(İşlemi iptal etmek için /iptal komutunu kullanabilirsiniz.)__",
+                reply_markup=ForceReply(True))
+            _text = await c.listen(usr_id, filters=filters.text, timeout=90)
+            if not _text.text:
                 return
-            if textp == PASS:
-                await db.add_user_pass(chat_id, textp)
-                msg_text = f"__Evet! Başarıyla Oturum Açıldı.__ {FACE_SAVORING_FOOD}"
-                await m.reply_text(
-                    text=Translation.START_TEXT.format(m.chat.mention),
-                    disable_web_page_preview=True,
-                    reply_to_message_id=m.id,
-                    reply_markup=Translation.START_BUTTONS
-                )
-            else:
-                msg_text = "__Yanlış şifre, tekrar deneyin. /login__"
-            await m.reply(msg_text)
-        except errors.FloodWait as e:
-            time.sleep(e.value)
-        except Exception as e:
-            LOGGER.error(e)
-        await m.delete(True)
-        await msg.delete(True)
+            textp = _text.text.upper()
+            if textp == "/iptal":
+                await m.delete(True)
+                await msg.delete(True)
+                await msg.reply("__İşlem Başarıyla İptal Edildi.__")
+                return
+        except TimeoutError:
+            await m.reply("__Şifre için daha fazla bekleyemem, tekrar dene.__")
+            return
+        if textp == PASS:
+            await db.add_user_pass(chat_id, textp)
+            msg_text = f"__Evet! Başarıyla Oturum Açıldı.__ {FACE_SAVORING_FOOD}"
+            await m.reply_text(
+                text=Translation.START_TEXT.format(m.chat.mention),
+                disable_web_page_preview=True,
+                reply_to_message_id=m.id,
+                reply_markup=Translation.START_BUTTONS
+            )
+        else:
+            msg_text = "__Yanlış şifre, tekrar deneyin. /login__"
+        await m.reply(msg_text)
+    except errors.FloodWait as e:
+        time.sleep(e.value)
+    except Exception as e:
+        LOGGER.error(e)
+    await m.delete(True)
+    await msg.delete(True)

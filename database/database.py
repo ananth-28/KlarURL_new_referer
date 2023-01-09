@@ -38,15 +38,13 @@ class Database:
 
     async def is_user_exist(self, id):
         user = await self.col.find_one({'id': int(id)})
-        return True if user else False
+        return bool(user)
 
     async def total_users_count(self):
-        count = await self.col.count_documents({})
-        return count
+        return await self.col.count_documents({})
 
     async def get_all_users(self):
-        all_users = self.col.find({})
-        return all_users
+        return self.col.find({})
 
     async def delete_user(self, user_id):
         await self.col.delete_many({'id': int(user_id)})
@@ -101,8 +99,7 @@ class Database:
         return user.get("notif", False)
 
     async def get_all_notif_user(self):
-        notif_users = self.col.find({"notif": True})
-        return notif_users
+        return self.col.find({"notif": True})
 
     async def get_user_data(self, id) -> dict:
         user = await self.col.find_one({'id': int(id)})

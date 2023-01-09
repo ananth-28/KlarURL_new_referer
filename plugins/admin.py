@@ -57,7 +57,7 @@ async def status_handler(_, m: Message):
             "Authorization": f"Bearer {HEROKU_API_KEY}",
             "Accept": "application/vnd.heroku+json; version=3.account-quotas",
         }
-        path = "/accounts/" + user_id + "/actions/get-quota"
+        path = f"/accounts/{user_id}/actions/get-quota"
         session = requests.Session()
         with session as ses:
             with ses.get(heroku_api + path, headers=headers) as r:
